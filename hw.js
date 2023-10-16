@@ -96,7 +96,7 @@ function change(paid ,cost){
             console.log("20 dollar bills:",output)
         }
     }
-    output = 10
+    output = 0
     while(remainder >= 10){
         output += 1
         remainder -= 10
