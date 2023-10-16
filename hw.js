@@ -67,121 +67,113 @@
 // console.log(quarters(20, 6))
 
 
-//4.    Write a function that prints out how many bills you would recieve in change after paying a certain amount.  Return in as large denominations as possible. Parameters should be amount paid and amount cost
+//4.    (Complete) Write a function that prints out how many bills you would recieve in change after paying a certain amount.  Return in as large denominations as possible. Parameters should be amount paid and amount cost
 
-// function change(x,y){
-//     let remainder = x - y
-//     let output = 0
-//     let outputArray = []
-//     while(remainder >= 100){
-//      output += 1
-//         remainder -= 100
-//         if (output >= 1 && remainder < 100){
-//             // console.log("100 dollar bills:" + output)
-//             outputArray.push("100 dollar bills:" + output)
-//         }
-//     }
-//     output = 0
-//     while(remainder >= 50){
-//         output += 1
-//         remainder -= 50
-//         if(output >= 1 && remainder < 50){
-//             // console.log("50 dollar bills:",output)
-//             outputArray.push("50 dollar bills:" + output)
-//         }
-//     }
-//     output = 0
-//     while(remainder >= 20){
-//         output += 1
-//         remainder -= 20
-//         if(output >= 1 && remainder < 20){
-//             // console.log("20 dollar bills:",output)
-//             outputArray.push("20 dollar bills:" + output)
-//         }
-//     }
-//     output = 10
-//     while(remainder >= 10){
-//         output += 1
-//         remainder -= 10
-//         if(output >= 1 && remainder < 10){
-//             // console.log("10 dollar bills:",output)
-//             outputArray.push("10 dollar bills:" + output)
-//         }
-//     }
-//     output = 0
-//     while(remainder >= 5){
-//         output += 1
-//         remainder -= 5
-//         if(output >= 1 && remainder < 5){
-//             // console.log("5 dollar bills:",output)
-//             outputArray.push("5 dollar bills:" + output)
-//         }
-//     }
-//     output = 0
-//     while(remainder >= 1){
-//         output += 1
-//         remainder -= 1
-//         if(output >= 1 && remainder < 1){
-//             // console.log("1 dollar bills:",output)
-//             outputArray.push("1 dollar bills:" + output)
-//         }
-//     }
-//     output = 0
-//     while(remainder >= 0.25){
-//         output += 1
-//         remainder -= 0.25
-//         if(output >= 1 && remainder < 0.25){
-//             // console.log("Quarters:",output)
-//             outputArray.push("Quarters:" + output)
-//         }   
-//     }
-//     output = 0
-//     while(remainder >= 0.1){
-//         output += 1
-//         remainder -= 0.1
-//         if(output < 0.1 && remainder < 0.1){
-//             // console.log("Dimes:",output)
-//             outputArray.push("Dimes:" + output)
-//         }
-//     }
-//     output = 0
-//     while(remainder >= 0.05){
-//         output += 1
-//         remainder -= 0.05
-//         if(output >= 1 && remainder < 0.05){
-//             // console.log("Nickles:",output)
-//             outputArray.push("Quarters:" + output)
-//         }
-//     }
-//     output = 0
-//     while(remainder >= 0.01){
-//         output += 1
-//         remainder -= 0.01
-//         if(output >= 1 && remainder < 0.01){
-//             // console.log("Pennies:",output)
-//             outputArray.push("Pennies:" + output)
-//         }
-//     } 
+function change(paid ,cost){
+    let remainder = paid - cost
+    let output = 0
+    let outputArray = []
+    while(remainder >= 100){
+     output += 1
+        remainder -= 100
+        if (output >= 1 && remainder < 100){
+            console.log("100 dollar bills:" + output)
+        }
+    }
+    output = 0
+    while(remainder >= 50){
+        output += 1
+        remainder -= 50
+        if(output >= 1 && remainder < 50){
+            console.log("50 dollar bills:",output)
+        }
+    }
+    output = 0
+    while(remainder >= 20){
+        output += 1
+        remainder -= 20
+        if(output >= 1 && remainder < 20){
+            console.log("20 dollar bills:",output)
+        }
+    }
+    output = 10
+    while(remainder >= 10){
+        output += 1
+        remainder -= 10
+        if(output >= 1 && remainder < 10){
+            console.log("10 dollar bills:",output)
+        }
+    }
+    output = 0
+    while(remainder >= 5){
+        output += 1
+        remainder -= 5
+        if(output >= 1 && remainder < 5){
+            console.log("5 dollar bills:",output)
+        }
+    }
+    output = 0
+    while(remainder >= 1){
+        output += 1
+        remainder -= 1
+        if(output >= 1 && remainder < 1){
+            console.log("1 dollar bills:",output)
+        }
+    }
+    output = 0
+    while(remainder >= 0.25){
+        output += 1
+        remainder -= 0.25
+        if(output >= 1 && remainder < 0.25){
+            console.log("Quarters:",output)
+        }   
+    }
+    output = 0
+    while(remainder >= 0.1){
+        output += 1
+        remainder -= 0.1
+        if(output < 0.1 && remainder < 0.1){
+            console.log("Dimes:",output)
+        }
+    }
+    output = 0
+    while(remainder >= 0.05){
+        output += 1
+        remainder -= 0.05
+        if(output >= 1 && remainder < 0.05){
+            console.log("Nickles:",output)
+        }
+    }
+    output = 0
+    while(remainder >= 0.01){
+        output += 1
+        remainder -= 0.01
+        if(output >= 1 && remainder < 0.01){
+            console.log("Pennies:",output)
+        }
+    } 
+}
 
-//     return outputArray
-// }
-
-// console.log(change(252.78,100))
+change(252.78,100)
 
 
 // 5.   (Complete) Write a program that uses console.log to print all the numbers from 1 to 100 with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead. When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
 
-// for (let i = 1; i <= 100; i++){
-//     if(i % 3 == 0 && i % 5 == 0){
-//         console.log("FizzBuzz")
-//     }
-//     else if(i % 5 == 0){
+// function FizzBuzz(){
+//     for (let i = 1; i <= 100; i++){
+//         if(i % 3 == 0 && i % 5 == 0){
+//          console.log("FizzBuzz")
+//         }
+//         else if(i % 5 == 0){
 //         console.log("Buzz")
-//     }
-//     else if(i % 3 == 0){
-//         console.log("Fizz")
-//     }
-//     else{
-//         console.log(i)
+//         }
+//         else if(i % 3 == 0){
+//             console.log("Fizz")
+//         }
+//         else{
+//             console.log(i)
 //     }
 // }
+// }
+
+// FizzBuzz()
