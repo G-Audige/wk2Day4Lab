@@ -31,33 +31,27 @@
 // console.log(grade(77))
 
 
-// 2.   Write a function that prints out multiples of 10 up to a given input (argument)
+// 2.   (Complete) Write a function that prints out multiples of 10 up to a given input (argument)
 
-function multiples(x){
-    let y = 0
-    if(x >= 10){
-        y += 10
-        console.log(y)
-        while (x >= y){
-            y += 10
-            if(y <= x)
-            console.log(y) 
-            else
-            return y          
-        }
-    }
-}
+// function multiples(x){
+//     if(x >= 10)
+//     for(let i = 1; i < x; i++){
+//         if(i % 10 == 0 && x - i <= 10){
+//             return i
+//         }
+//         else if(i % 10 == 0 )
+//         console.log(i)
+//     }
+//     else
+//     return "Null"
+// }
 
-console.log(multiples(11))
-
-
+// console.log(multiples(66))
 
 
 // 3.   (Complete) Write a function that takes bill amount and item price and says how many quarters they'd get in return
 
-// function quarters(x,y){
-//     let bill = x
-//     let price = y
+// function quarters(bill, price){
 //     let change = bill - price
 //     let quarts = 0
 
@@ -139,8 +133,7 @@ console.log(multiples(11))
 //         if(output >= 1 && remainder < 0.25){
 //             // console.log("Quarters:",output)
 //             outputArray.push("Quarters:" + output)
-//         }
-        
+//         }   
 //     }
 //     output = 0
 //     while(remainder >= 0.1){
