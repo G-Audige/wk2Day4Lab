@@ -5,66 +5,66 @@
 // - If students get 55 or above: console log Not to good
 // // - Any grade lower than 55 is Bad Grade But You'll Get Em Next Time
 
-// function grade(x){
-//     let score = x
-//     let comment
+function grade(x){
+    let score = x
+    let comment
 
-//     if(score >= 80){
-//         comment = "You did a good job."
-//     }
-//     else if(score >= 70){
-//         comment = "Keep trying."
-//     }
-//     else if(score >= 60){
-//         comment = "Ehhhh."
-//     }
-//     else if(score >= 55){
-//         comment = "Not too good."
-//     }
-//     else{
-//         comment = "Bad grade, but you'll get em next time."
-//     }
+    if(score >= 80){
+        comment = "You did a good job."
+    }
+    else if(score >= 70){
+        comment = "Keep trying."
+    }
+    else if(score >= 60){
+        comment = "Ehhhh."
+    }
+    else if(score >= 55){
+        comment = "Not too good."
+    }
+    else{
+        comment = "Bad grade, but you'll get em next time."
+    }
 
-//     return comment
-// }
+    return comment
+}
 
-// console.log(grade(77))
+console.log(grade(77))
 
 
 // 2.   (Complete) Write a function that prints out multiples of 10 up to a given input (argument)
 
-// function multiples(x){
-//     if(x >= 10)
-//     for(let i = 1; i < x; i++){
-//         if(i % 10 == 0 && x - i <= 10){
-//             return i
-//         }
-//         else if(i % 10 == 0 )
-//         console.log(i)
-//     }
-//     else
-//     return "Null"
-// }
+function multiples(x){
+    if(x >= 10)
+    for(let i = 1; i < x; i++){
+        if(i % 10 == 0 && x - i <= 10){
+            return i
+        }
+        else if(i % 10 == 0 )
+        console.log(i)
+    }
+    else
+    return "Null"
+}
 
-// console.log(multiples(66))
+console.log(multiples(66))
 
 
 // 3.   (Complete) Write a function that takes bill amount and item price and says how many quarters they'd get in return
 
-// function quarters(bill, price){
-//     let change = bill - price
-//     let quarts = 0
+function quarters(bill, price){
+    let change = bill - price
+    let quarts = 0
 
-//     while (change >= 0.25){
-//         quarts += 1
-//         change -= 0.25
-//     }
+    while (change >= 0.25){
+        quarts += 1
+        change -= 0.25
+    }
 
-//     return quarts
+    return quarts
     
-// }
+}
 
-// console.log(quarters(20, 6))
+console.log(quarters(20, 6))
 
 
 //4.    (Complete) Write a function that prints out how many bills you would recieve in change after paying a certain amount.  Return in as large denominations as possible. Parameters should be amount paid and amount cost
@@ -159,21 +159,21 @@ change(252.78,100)
 
 // 5.   (Complete) Write a program that uses console.log to print all the numbers from 1 to 100 with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead. When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
 
-// function FizzBuzz(){
-//     for (let i = 1; i <= 100; i++){
-//         if(i % 3 == 0 && i % 5 == 0){
-//          console.log("FizzBuzz")
-//         }
-//         else if(i % 5 == 0){
-//         console.log("Buzz")
-//         }
-//         else if(i % 3 == 0){
-//             console.log("Fizz")
-//         }
-//         else{
-//             console.log(i)
-//     }
-// }
-// }
+function FizzBuzz(){
+    for (let i = 1; i <= 100; i++){
+        if(i % 3 == 0 && i % 5 == 0){
+         console.log("FizzBuzz")
+        }
+        else if(i % 5 == 0){
+        console.log("Buzz")
+        }
+        else if(i % 3 == 0){
+            console.log("Fizz")
+        }
+        else{
+            console.log(i)
+    }
+}
+}
 
-// FizzBuzz()
+FizzBuzz()
