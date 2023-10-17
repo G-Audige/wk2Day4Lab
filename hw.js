@@ -10,25 +10,23 @@ function grade(x){
     let comment
 
     if(score >= 80){
-        comment = "You did a good job."
+        console.log("You did a good job.")
     }
     else if(score >= 70){
-        comment = "Keep trying."
+        console.log("Keep trying.")
     }
     else if(score >= 60){
-        comment = "Ehhhh."
+        console.log("Ehhhh.")
     }
     else if(score >= 55){
-        comment = "Not too good."
+        console.log("Not too good.")
     }
     else{
-        comment = "Bad grade, but you'll get em next time."
+        console.log("Bad grade, but you'll get em next time.")
     }
-
-    return comment
 }
 
-console.log(grade(77))
+grade(77)
 
 
 // 2.   (Complete) Write a function that prints out multiples of 10 up to a given input (argument)
