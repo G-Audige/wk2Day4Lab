@@ -40,10 +40,10 @@ function multiples(x){
         console.log(i)
     }
     else
-    return "Null"
+    console.log("Null")
 }
 
-multiples(66)
+multiples(3)
 
 
 // 3.   (Complete) Write a function that takes bill amount and item price and says how many quarters they'd get in return
