@@ -7,7 +7,6 @@
 
 function grade(x){
     let score = x
-    let comment
 
     if(score >= 80){
         console.log("You did a good job.")
