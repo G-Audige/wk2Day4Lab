@@ -32,18 +32,16 @@ grade(77)
 
 function multiples(x){
     if(x >= 10)
-    for(let i = 1; i < x; i++){
-        if(i % 10 == 0 && x - i <= 10){
-            return i
+    for(let i = 1; i <= x; i++){
+        if(i % 10 == 0){
+            console.log(i)
         }
-        else if(i % 10 == 0 )
-        console.log(i)
     }
     else
     console.log("Null")
 }
 
-multiples(3)
+multiples(9)
 
 
 // 3.   (Complete) Write a function that takes bill amount and item price and says how many quarters they'd get in return
