@@ -46,7 +46,7 @@ function multiples(x){
     return "Null"
 }
 
-console.log(multiples(66))
+multiples(66)
 
 
 // 3.   (Complete) Write a function that takes bill amount and item price and says how many quarters they'd get in return
@@ -60,11 +60,11 @@ function quarters(bill, price){
         change -= 0.25
     }
 
-    return quarts
+    console.log(quarts)
     
 }
 
-console.log(quarters(20, 6))
+quarters(20, 6)
 
 
 //4.    (Complete) Write a function that prints out how many bills you would recieve in change after paying a certain amount.  Return in as large denominations as possible. Parameters should be amount paid and amount cost
